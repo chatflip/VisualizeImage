@@ -4,7 +4,7 @@ import os
 from Visualizer import Visualizer
 
 
-def opt():
+def opt() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_path", type=str, default="sample.jpg")
     parser.add_argument("--output_dir", type=str, default="output")
